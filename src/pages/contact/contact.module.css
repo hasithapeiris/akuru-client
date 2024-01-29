@@ -1,0 +1,94 @@
+.contactPage {
+  margin: 150px 0;
+}
+
+.contactContainer {
+  max-width: 800px;
+  margin: auto;
+  color: var(--primary-text-color);
+}
+
+.contact {
+  font-family: var(--sinhala-font-family);
+  font-size: 40px;
+  text-align: center;
+}
+
+.para {
+  color: var(--foreground-color);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cards {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardIcon {
+  color: var(--foreground-color);
+  font-size: 50px !important;
+}
+
+.name {
+  color: var(--foreground-color);
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0 15px 0;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.icons .icon {
+  font-size: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: var(--link-color);
+}
+
+@media (max-width: 768px) {
+  .contactPage {
+    margin: 70px 0;
+  }
+
+  .contactContainer {
+    max-width: var(--mobile-container-width);
+  }
+
+  .contact {
+    font-family: var(--sinhala-font-family);
+    font-size: 30px;
+  }
+
+  .cards {
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 25px 0;
+  }
+
+  .cardIcon {
+    color: var(--foreground-color);
+    font-size: 40px !important;
+  }
+}

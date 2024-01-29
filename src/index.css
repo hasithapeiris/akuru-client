@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../src/fonts/fonts.module.css";
+
+body {
+  font-family: var(--english-font-family);
+  background-color: var(--background-color);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600&family=Noto+Serif+Sinhala&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  /* colors */
+
+  /* background colors */
+  --primary-color: #333333;
+  --background-color: #fdfbfb;
+  --foreground-color: #444444;
+  --light-foreground-color: #e7e7e7;
+
+  /* text colors */
+  --primary-text-color: #222222;
+  --secondary-text-color: #ffffff;
+  --light-text-color: #555555;
+  --link-color: #4366a5;
+
+  --hover-opacity: rgba(231, 231, 231, 0.5);
+
+  /* border colors */
+  --border-color: #ababab;
+
+  /* typo */
+  --font-family: "Arial", sans-serif;
+  --sinhala-font-family: "Abhaya Libre", serif;
+  --english-font-family: "Poppins", sans-serif;
+  --logo-font-family: "Abhaya Libre", serif;
+
+  /* spacing */
+  --desktop-container-width: 70%;
+  --mobile-container-width: 90%;
+  --letter-spacing: 1.5px;
+}
+
+[data-theme="dark"] {
+  /* background colors */
+  --primary-color: #f2f2f2;
+  --background-color: #202020;
+  --foreground-color: #cccccc;
+  --light-foreground-color: #303030;
+
+  /* text colors */
+  --primary-text-color: #f2f2f2;
+  --secondary-text-color: #202020;
+  --light-text-color: #dddddd;
+
+  --hover-opacity: rgba(85, 85, 85, 0.25);
+
+  /* border colors */
+  --border-color: #999999;
+}

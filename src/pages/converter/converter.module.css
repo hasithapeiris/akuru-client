@@ -1,0 +1,134 @@
+.converterContainer {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 50px 20px 120px 20px;
+  width: 800px;
+}
+
+.convertBoxes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+}
+
+.inputBox,
+.outputBox {
+  flex: 1;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.stickyBox {
+  position: sticky;
+  padding-top: 22px;
+  padding-bottom: 10px;
+  top: -2px;
+  z-index: 100;
+  background-color: var(--background-color);
+}
+
+.inputBox textarea,
+.outputBox textarea {
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--primary-text-color);
+}
+
+.outputBox textarea {
+  font-size: 22px;
+  line-height: 1.8rem;
+  box-sizing: border-box;
+}
+
+.inputBox:hover,
+.inputBox:focus,
+.outputBox:hover,
+.outputBox:focus {
+  border-color: var(--light-text-color);
+}
+
+.textArea {
+  position: relative;
+  padding: 30px 30px 0 30px;
+}
+
+textArea::placeholder {
+  color: var(--border-color);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switchButtons {
+  display: flex;
+}
+
+.switchButtons button {
+  margin-right: 8px;
+  padding: 7px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  color: var(--foreground-color);
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: var(--letter-spacing);
+}
+
+.switchButtons button.activeButton {
+  background-color: var(--foreground-color);
+  color: var(--secondary-text-color);
+  border-color: var(--foreground-color);
+  transition: background-color 0.3s ease;
+}
+
+.switchButtons button:hover {
+  background-color: var(--light-foreground-color);
+  color: var(--primary-text-color);
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .converterContainer {
+    width: var(--mobile-container-width);
+    padding: 30px 0 60px 0;
+    margin: auto;
+  }
+
+  .stickyBox {
+    padding-top: 25px;
+  }
+
+  .toolbar {
+    justify-content: center;
+  }
+
+  .switchButtons {
+    gap: 8px;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .switchButtons button {
+    margin: 0;
+    width: 100%;
+  }
+
+  .inputBox textarea {
+    height: 50px;
+  }
+
+  .outputBox textarea {
+    height: 200px;
+  }
+}

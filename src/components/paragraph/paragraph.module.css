@@ -1,0 +1,39 @@
+.paraContainer {
+  border: 1px solid var(--border-color);
+  /* max-width: 50%; */
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--primary-text-color);
+}
+
+.selector {
+  width: 20%;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+}
+
+.selector option {
+  background-color: var(--background-color);
+}
+
+.selector:focus,
+.selector:hover {
+  border-color: var(--light-text-color);
+}
+
+.selector option {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  .selector {
+    width: 40%;
+  }
+}

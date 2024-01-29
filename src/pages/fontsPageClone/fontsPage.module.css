@@ -1,0 +1,157 @@
+.fontsPageContainer {
+  width: var(--desktop-container-width);
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.buttonGroup {
+  display: flex;
+}
+
+.packButtons {
+  display: flex;
+}
+
+.packButtons button {
+  padding: 7px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  color: var(--foreground-color);
+  outline: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  letter-spacing: var(--letter-spacing);
+  margin-right: 10px;
+}
+
+.filterButtons {
+  display: flex;
+}
+
+.filterButtons button {
+  padding: 7px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  color: var(--foreground-color);
+  outline: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  letter-spacing: var(--letter-spacing);
+  margin-left: 10px;
+}
+
+.filters button:hover {
+  background-color: var(--light-foreground-color);
+  color: var(--primary-text-color);
+  transition: background-color 0.3s ease;
+}
+
+.filters button.active {
+  background-color: var(--foreground-color);
+  color: var(--secondary-text-color);
+  border-color: var(--foreground-color);
+  transition: background-color 0.3s ease;
+}
+
+.fontsSearch {
+  width: 500px;
+  padding: 10px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 100px;
+  display: flex;
+  color: var(--border-color);
+  align-items: center;
+  gap: 10px;
+}
+
+.searchInput {
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent;
+  color: var(--primary-text-color);
+}
+
+.searchInput::placeholder {
+  color: var(--border-color);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.paginationControl {
+  color: var(--primary-text-color);
+  background-color: #cccccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .headerGroup {
+    flex-direction: column;
+  }
+
+  .fontsPageContainer {
+    width: var(--mobile-container-width);
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .buttonGroup {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .packButtons {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    padding: 10px 20px;
+    gap: 10px;
+    left: 0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--light-foreground-color);
+  }
+
+  .packButtons button {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .filterButtons {
+    width: 100%;
+    gap: 10px;
+    justify-content: space-around;
+  }
+
+  .filterButtons button {
+    margin: 0;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fontsSearch {
+    width: 100%;
+  }
+}

@@ -1,0 +1,47 @@
+.packCard {
+  position: relative;
+  color: var(--primary-text-color);
+}
+
+.packCardContainer {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.packCardContainer:hover {
+  background-color: var(--hover-opacity);
+}
+
+.packName {
+  padding: 5px 10px;
+  border: 1px solid var(--light-text-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.packPreview {
+  padding: 10px 0;
+}
+
+.button {
+  right: 10px;
+  bottom: 10px;
+  position: absolute;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttonIcon {
+  font-size: 24px;
+  color: var(--foreground-color);
+}
+
+.button:hover {
+  background-color: var(--light-foreground-color);
+}

@@ -1,0 +1,55 @@
+.inputSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.fontSizeSection {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.fontSizeValue {
+  margin-right: 10px;
+  font-size: 16px;
+  color: var(--primary-text-color);
+}
+
+.inputBox {
+  flex: 5;
+}
+
+.textInput {
+  width: 100%;
+  outline: none;
+  padding: 15px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 100px;
+  font-size: 16px;
+  background-color: transparent;
+  color: var(--primary-text-color);
+}
+
+.textInput::placeholder {
+  color: var(--border-color);
+}
+
+@media (max-width: 768px) {
+  .inputSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0;
+  }
+
+  .inputBox {
+    width: 100%;
+  }
+
+  .fontSizeSection {
+    width: 90%;
+  }
+}

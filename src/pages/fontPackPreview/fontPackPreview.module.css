@@ -1,0 +1,81 @@
+.fontPreview {
+  padding: 50px 0 100px 0;
+}
+
+.fontPreviewContainer {
+  width: var(--desktop-container-width);
+  margin: auto;
+}
+
+.nameSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fontName {
+  font-size: 36px;
+  color: var(--primary-text-color);
+}
+
+.downloadButton {
+  display: flex;
+  align-items: center;
+  background-color: var(--foreground-color);
+  color: var(--secondary-text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: var(--letter-spacing);
+  transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: var(--primary-color);
+}
+
+.bodyContent {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.fonts {
+  flex: 3;
+}
+
+.info {
+  flex: 2;
+}
+
+@media (max-width: 768px) {
+  .fontPreviewContainer {
+    width: var(--mobile-container-width);
+  }
+
+  .nameSection {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .downloadButton {
+    margin-bottom: 15px;
+  }
+
+  .bodyContent {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .fonts {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+  }
+}

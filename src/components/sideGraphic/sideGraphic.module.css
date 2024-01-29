@@ -1,0 +1,26 @@
+.graphicImage1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: auto;
+  z-index: -1000;
+}
+
+.graphicImage2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: auto;
+  z-index: -1000;
+}
+
+@media (max-width: 768px) {
+  .graphicImage1 {
+    display: none;
+  }
+  .graphicImage2 {
+    display: none;
+  }
+}
