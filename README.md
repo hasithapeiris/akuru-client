@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Akuru - Sinhala Font Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Akuru is a comprehensive Sinhala Font Manager designed to enhance the user experience for Sinhala typography. With Akuru, users can:
 
-## Available Scripts
+- **Preview Sinhala fonts** by entering custom text.
+- **Download fonts** individually or as packs.
+- **Translate text** to Sinhala Unicode.
 
-In the project directory, you can run:
+This project is built using **React** for the frontend, **Node.js + Express.js** for the backend, and **MongoDB** as the database.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Features](#features)
+- [Demo](#demo)
+- [Tech Stack](#tech-stack)
+- [Usage](#usage)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- **Custom Font Preview**: Input custom text to preview Sinhala fonts.
+- **Font Management**: Download fonts individually or in bulk as packs.
+- **Unicode Translation**: Easily translate text to Sinhala Unicode.
+- **User Authentication**: Secure login and registration.
+- **Admin Panel**: Manage fonts and user access.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+👉 [Live Demo](https://akuru-client.onrender.com/)
 
-### `npm run eject`
+### 🖼️ Screenshots:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Home
+![home](https://github.com/user-attachments/assets/68157281-389d-43bf-a839-676f985fd021)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Font Preview
+![fonts](https://github.com/user-attachments/assets/19036e4f-92ac-44cb-98f7-8d2d86dcca0f)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Download Packs
+![packs](https://github.com/user-attachments/assets/ae8404dd-c569-4f6e-bc5b-de725e279972)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Unicode Converter
+![converter](https://github.com/user-attachments/assets/4ac3ae7a-b166-44ed-b07a-cbb118be3b40)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Tech Stack
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Frontend**:  
+- React  
+- CSS Modules
 
-### Code Splitting
+**Backend**:  
+- Node.js  
+- Express.js  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Database**:  
+- MongoDB  
 
-### Analyzing the Bundle Size
+**Other Tools**:  
+- Axios (for API communication)  
+- Mongoose (for MongoDB schema and database operations)  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. **Font Preview:** Enter custom text in the preview input to view fonts.
+2. **Download Fonts:** Browse available fonts and download individually or in packs.
+3. **Admin Features:** Login as an admin to manage fonts and user access.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy using Akuru! 🎉
